@@ -1,11 +1,346 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> </title>
+<meta charset="UTF-8">
+<title>Vinayakrao Patil Mahavidyalaya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:#002147;
+    color:white;
+    padding:20px;
+}
+
+/* NEW HEADER LAYOUT */
+.header-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+/* LOGO STYLE */
+.header-content img{
+    width:80px;        /* adjust if needed */
+    height:auto;
+}
+
+/* TEXT ALIGNMENT */
+.header-text h1{
+    margin:0;
+    font-size:28px;
+}
+
+.header-text p{
+    margin:5px 0 0;
+    font-size:14px;
+}
+/* NAVBAR */
+nav{
+    background:#003366;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(to right,#004e92,#000428);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#002147;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ADMISSIONS */
+.admissions{
+    background:#e8f0ff;
+    padding:40px 20px;
+}
+
+/* FACULTY */
+.faculty img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:transform 0.3s ease;
+}
+
+.gallery-item:hover{
+    transform:scale(1.05);
+}
+
+.gallery-item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.gallery-item p{
+    text-align:center;
+    padding:10px;
+    background:#002147;
+    color:white;
+    font-weight:bold;
+}
+
+/* FORM */
+form{
+    background:white;
+    padding:25px;
+    max-width:600px;
+    margin:auto;
+    border-radius:8px;
+}
+
+form input, form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+form button{
+    background:#002147;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#003366;
+}
+
+/* FOOTER */
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-<h1> Hello Codingwale </h1>
-<h2>Succesfully Deploy our project using Jenkins to Tomcat</h2>
-<h3> Poll SCM Working...</h3>
+<header>
+    <div class="header-content">
+        
+        <!-- COLLEGE LOGO -->
+        <img src="https://vpcollege.org/wp-content/uploads/2021/08/vpc_logo.png" alt="Vinayakrao Patil College Logo">
+
+        <!-- COLLEGE NAME -->
+        <div class="header-text">
+         
+	 <h1>VINAYAKRAO PATIL MAHAVIDYALAYA</h1>
+            <p>Knowledge | Innovation | Excellence</p>
+        </div>
+
+    </div>
+</header>
+
+<nav>
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#departments">Departments</a></li>
+    <li><a href="#admissions">Admissions</a></li>
+    <li><a href="#faculty">Faculty</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to VP College</h1>
+    <p>Empowering students for a better future</p>
+</section>
+
+<section id="about" class="container">
+<h2>About Us</h2>
+<p>
+Vinayakrao Patil College. focuses on academic excellence,
+innovation, and industry-ready education since 2005.
+</p>
+</section>
+
+<section id="courses" class="container">
+<h2>Courses</h2>
+<div class="cards">
+    <div class="card">B.com</div>
+    <div class="card">BSC-agree</div>
+    <div class="card">MBA</div>
+    <div class="card">BA</div>
+</div>
+</section>
+
+<section id="departments" class="container">
+<h2>Departments</h2>
+<div class="cards">
+    <div class="card">BCA</div>
+    <div class="card">BCS</div>
+    <div class="card">BBA</div>
+    <div class="card">BSC</div>
+</div>
+</section>
+
+<section id="admissions" class="admissions">
+<div class="container">
+<h2>Admissions</h2>
+<p>Admissions are based on merit and entrance examinations.</p>
+</div>
+</section>
+
+<section id="faculty" class="container faculty">
+<h2>Our Faculty</h2>
+<div class="cards">
+    <div class="card">
+        <img src="https://vpcollege.org/wp-content/uploads/2022/08/Abhijit-Photo-e1659971112763-243x300.jpg">
+        <h3>Dr. A. Thorat</h3>
+    </div>
+    <div class="card">
+        <img src="https://vpcollege.org/wp-content/uploads/2022/08/S.B.-Shinde-222x300.jpg">
+        <h3>Dr.s.shinde</h3>
+    </div>
+    <div class="card">
+        <img src="https://vpcollege.org/wp-content/uploads/2022/08/Photo-N.L.Kulkarni-237x300.jpg">
+        <h3>Dr.N.L.kulkarni</h3>
+    </div>
+</div>
+</section>
+
+<section id="gallery" class="container">
+<h2>Gallery</h2>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="https://content.jdmagicbox.com/v2/comp/aurangabad-maharashtra/y5/9999px240.x240.100804163213.z3y5/catalogue/vinayakrao-patil-mahavidyalaya-vaijapur-aurangabad-aurangabad-maharashtra-arts-colleges-nYC8IuPJGe.jpg">
+        <p>Campus</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcAqK5aBwRd4mgqHwUv-1FxAdHBYlnUQmaQA&s">
+        <p>Library</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://vpcollege.org/wp-content/uploads/2025/01/20-768x576.jpeg">
+        <p>Laboratory</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.shiksha.com/mediadata/images/1599483337phpZX761k.jpeg">
+        <p>Sports</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCEEYg9_aN1QrMqecQT25qnQYI7YNsImaWrA&s">
+        <p>Auditorium</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://vpcollege.org/wp-content/uploads/2022/08/4_Senior-College-Classrooms-and-IT-Lab-768x512.jpg">
+        <p>Hostel</p>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="container">
+<h2>Contact Us</h2>
+<form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+</form>
+</section>
+<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vpcollege.org/&ved=2ahUKEwjDycHTkNORAxXZzzgGHZFKNVEQFnoECBwQAQ&usg=AOvVaw2LAqqhtU7tJpxpCWdMr12c"> main website of Vinaykrao Patil Mahavidyalaya</a>
+<footer>
+<p>© 2025 Vinayakrao Patil Mahavidyalaya, Vaijapur</p>
+</footer>
+
+<script>
+function submitForm(e){
+    e.preventDefault();
+    alert("Message sent successfully!");
+}
+</script>
 
 </body>
 </html>
+
